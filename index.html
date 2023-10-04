@@ -3,38 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/reset.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
     <section>
-        <header>
-            <h1>Weather Dashboard</h1>
+        <header class="title-dashboard">
+            <h1 id="heading">Weather Dashboard</h1>
         </header>
     </section>
 
-    <section>
-        <h2>5-Day Forecast:</h2>
+    <aside>
+        <section class="left-column">
+            <h2 id="title-search">Search for a City</h2>
+            <input type="text" id="input" placeholder="New York" name="search">
+            <br>
+            <button class="search-button">Search</button>
+            <nav class="city">
+                <br>
+                <button>Atlanta</button>
+                <br>
+                <button>Denver</button>
+                <br>
+                <button>Seattle</button>
+                <br>
+                <button>San Francisco</button>
+                <br>
+                <button>Orlando</button>
+                <br>
+                <button>Los Angeles</button>
+                <br>
+                <button>Chicago</button>
+                <br>
+                <button>Austin</button>
+            </nav>
+    
+    </aside>
+    </section>
+
+    <section class="five-day">
+        <h2 id="forecast">5-Day Forecast:</h2>
         
     </section>
 
-    <section>
-        <h2>Search for a City</h2>
-        <nav>
-            <input placeholder text="New York">
-            <br>
-            <button>Search</button>
-            <br>
-            <button>Atlanta</button>
-            <button>Denver</button>
-            <button>Seattle</button>
-            <button>San Francisco</button>
-            <button>Orlando</button>
-            <button>Los Angeles</button>
-            <button>Chicago</button>
-            <button>Austin</button>
-        </nav>
-
-    </section>
 </body>
 </html>
