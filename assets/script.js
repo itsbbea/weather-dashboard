@@ -1,14 +1,9 @@
 var searchBtn = document.getElementById("search-button")
-var city = document.getElementByClass("city")
-var forecast = document.getElementByClass("forecast")
+var city = document.getElementById("city")
+var forecast = document.getElementById("forecast")
 
-function getForecast() {
+searchBtn.addEventListener("click", function() {
     var inputText = document.getElementById("input").value.trim();
-    saveSearchHistory(inputText)
-    fetch("https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}").then(function (input) {
+    getForecast(inputText);
+});
 
-
-    })
-
-
-}
