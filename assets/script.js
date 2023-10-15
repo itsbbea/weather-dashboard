@@ -7,3 +7,15 @@ searchBtn.addEventListener("click", function() {
     getForecast(inputText);
 });
 
+function getForecast(cityName) {
+    var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${input}&appid=74d2f8c55d49194744b26e13accfaeeb`;
+
+    fetch(apiUrl)
+        .then(function(response) {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("Network response was not ok.");
+            }
+        })
+    }
