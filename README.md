@@ -6,10 +6,10 @@ A weather dashboard to help users view a reliable dashboard that retrieves data 
 ![Screenshot 2023-10-15 234045](https://github.com/itsbbea/weather-dashboard/assets/137044035/59638295-adc3-4d8a-a3d0-1846c1c4f927)
 
 ## Installation
-N/A
+OpenWeather API: https://openweathermap.org/forecast5
 
 ## Usage
-To view the weather dashboard, please visit this URL:
+To view the weather dashboard, please visit the URL provided: https://itsbbea.github.io/weather-dashboard/
 ## Credits
 N/A
 
