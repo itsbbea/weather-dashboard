@@ -7,7 +7,7 @@ searchBtn.addEventListener("click", function() {
     getForecast(inputText);
 });
 
-function getForecast(cityName) {
+function getForecast(city) {
     var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${input}&appid=74d2f8c55d49194744b26e13accfaeeb`;
 
     fetch(apiUrl)
@@ -18,4 +18,10 @@ function getForecast(cityName) {
                 throw new Error("Network response was not ok.");
             }
         })
-    }
+.then(function(data) {
+    console.log(data);
+})
+.catch(function(error) {
+    console.log("There was a problem with the fetch operation: " + error);
+})
+}
